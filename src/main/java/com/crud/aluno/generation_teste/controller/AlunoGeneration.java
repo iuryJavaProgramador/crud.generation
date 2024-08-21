@@ -28,7 +28,7 @@ public class AlunoGeneration {
     public Aluno createAluno(@RequestBody Aluno aluno) {
         return alunoService.saveAluno(aluno);
     }
-    @PostMapping("/{id}")
+    @PostMapping("/batch")
     public List<Aluno> createAlunos(@RequestBody List<Aluno> alunos) {
         return alunoService.saveAlunos(alunos);
     }

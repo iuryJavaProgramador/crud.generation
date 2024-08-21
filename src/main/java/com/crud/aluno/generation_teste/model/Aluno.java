@@ -5,13 +5,12 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Size(min = 1, max = 150)
 public class Aluno {
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
     private Long id;
+    @Size(min = 1, max = 120)
     private String nome;
     private Integer idade;
     private Double notaPrimeiroSemestre;
